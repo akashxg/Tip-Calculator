@@ -14,6 +14,7 @@
 		96219769218243E2008CBA15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96219767218243E2008CBA15 /* LaunchScreen.storyboard */; };
 		96219774218243E2008CBA15 /* tipCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219773218243E2008CBA15 /* tipCalcTests.swift */; };
 		9621977F218243E3008CBA15 /* tipCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9621977E218243E2008CBA15 /* tipCalcUITests.swift */; };
+		9699896F2183A59800FAF4C3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9699896E2183A59800FAF4C3 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9621977A218243E2008CBA15 /* tipCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9621977E218243E2008CBA15 /* tipCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipCalcUITests.swift; sourceTree = "<group>"; };
 		96219780218243E3008CBA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9699896E2183A59800FAF4C3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				9621975E218243E1008CBA15 /* AppDelegate.swift */,
 				96219760218243E1008CBA15 /* ViewController.swift */,
 				96219762218243E1008CBA15 /* Main.storyboard */,
+				9699896E2183A59800FAF4C3 /* SettingsViewController.swift */,
 				96219765218243E2008CBA15 /* Assets.xcassets */,
 				96219767218243E2008CBA15 /* LaunchScreen.storyboard */,
 				9621976A218243E2008CBA15 /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				96219761218243E1008CBA15 /* ViewController.swift in Sources */,
 				9621975F218243E1008CBA15 /* AppDelegate.swift in Sources */,
+				9699896F2183A59800FAF4C3 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
