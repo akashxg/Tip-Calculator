@@ -10,6 +10,7 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var defaultTipLabel: UILabel!
     @IBOutlet weak var tipDefault: UISegmentedControl!
     
     let defaults = UserDefaults.standard
@@ -17,7 +18,8 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // set view font & size
+        defaultTipLabel.font = UIFont(name: Theme.mainFontName, size: 20)
         // purpose of this code is to maintain the selected default
         // amount even after leaving the settings viewController
         let dAmount = defaults.double(forKey:"tipAmount")

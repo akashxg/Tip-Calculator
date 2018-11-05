@@ -14,7 +14,9 @@
 		96219769218243E2008CBA15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96219767218243E2008CBA15 /* LaunchScreen.storyboard */; };
 		96219774218243E2008CBA15 /* tipCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219773218243E2008CBA15 /* tipCalcTests.swift */; };
 		9621977F218243E3008CBA15 /* tipCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9621977E218243E2008CBA15 /* tipCalcUITests.swift */; };
+		963326AF218E1EDB008258C6 /* Silom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 963326AE218E1EDB008258C6 /* Silom.ttf */; };
 		9699896F2183A59800FAF4C3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9699896E2183A59800FAF4C3 /* SettingsViewController.swift */; };
+		96F4DF7A2189645200671CB5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F4DF792189645200671CB5 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,9 @@
 		9621977A218243E2008CBA15 /* tipCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9621977E218243E2008CBA15 /* tipCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipCalcUITests.swift; sourceTree = "<group>"; };
 		96219780218243E3008CBA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963326AE218E1EDB008258C6 /* Silom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Silom.ttf; sourceTree = "<group>"; };
 		9699896E2183A59800FAF4C3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		96F4DF792189645200671CB5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		9621975D218243E1008CBA15 /* tipCalc */ = {
 			isa = PBXGroup;
 			children = (
+				96F4DF782189642E00671CB5 /* Resources */,
 				9621975E218243E1008CBA15 /* AppDelegate.swift */,
 				96219760218243E1008CBA15 /* ViewController.swift */,
 				96219762218243E1008CBA15 /* Main.storyboard */,
@@ -126,6 +131,15 @@
 				96219780218243E3008CBA15 /* Info.plist */,
 			);
 			path = tipCalcUITests;
+			sourceTree = "<group>";
+		};
+		96F4DF782189642E00671CB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				963326AE218E1EDB008258C6 /* Silom.ttf */,
+				96F4DF792189645200671CB5 /* Theme.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96219769218243E2008CBA15 /* LaunchScreen.storyboard in Resources */,
+				963326AF218E1EDB008258C6 /* Silom.ttf in Resources */,
 				96219766218243E2008CBA15 /* Assets.xcassets in Resources */,
 				96219764218243E1008CBA15 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96219761218243E1008CBA15 /* ViewController.swift in Sources */,
+				96F4DF7A2189645200671CB5 /* Theme.swift in Sources */,
 				9621975F218243E1008CBA15 /* AppDelegate.swift in Sources */,
 				9699896F2183A59800FAF4C3 /* SettingsViewController.swift in Sources */,
 			);
