@@ -15,7 +15,12 @@
 		96219774218243E2008CBA15 /* tipCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219773218243E2008CBA15 /* tipCalcTests.swift */; };
 		9621977F218243E3008CBA15 /* tipCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9621977E218243E2008CBA15 /* tipCalcUITests.swift */; };
 		963326AF218E1EDB008258C6 /* Silom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 963326AE218E1EDB008258C6 /* Silom.ttf */; };
+		966E7F0D21C04462004087EF /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966E7F0C21C04462004087EF /* ThemeProtocol.swift */; };
+		966E7F0F21C04596004087EF /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966E7F0E21C04596004087EF /* LightTheme.swift */; };
+		966E7F1121C045A2004087EF /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966E7F1021C045A2004087EF /* DarkTheme.swift */; };
+		966E7F1421C0D151004087EF /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966E7F1221C0D151004087EF /* SettingsViewController.storyboard */; };
 		9699896F2183A59800FAF4C3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9699896E2183A59800FAF4C3 /* SettingsViewController.swift */; };
+		96A1D1D921ACDBB5008C12BA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A1D1D821ACDBB5008C12BA /* Colors.xcassets */; };
 		96F4DF7A2189645200671CB5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F4DF792189645200671CB5 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +56,12 @@
 		9621977E218243E2008CBA15 /* tipCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipCalcUITests.swift; sourceTree = "<group>"; };
 		96219780218243E3008CBA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		963326AE218E1EDB008258C6 /* Silom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Silom.ttf; sourceTree = "<group>"; };
+		966E7F0C21C04462004087EF /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		966E7F0E21C04596004087EF /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		966E7F1021C045A2004087EF /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		966E7F1321C0D151004087EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = tipCalc/Base.lproj/SettingsViewController.storyboard; sourceTree = "<group>"; };
 		9699896E2183A59800FAF4C3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		96A1D1D821ACDBB5008C12BA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		96F4DF792189645200671CB5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,10 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				96F4DF782189642E00671CB5 /* Resources */,
+				966E7F1521C0D252004087EF /* Views */,
 				9621975E218243E1008CBA15 /* AppDelegate.swift */,
-				96219760218243E1008CBA15 /* ViewController.swift */,
-				96219762218243E1008CBA15 /* Main.storyboard */,
-				9699896E2183A59800FAF4C3 /* SettingsViewController.swift */,
 				96219765218243E2008CBA15 /* Assets.xcassets */,
 				96219767218243E2008CBA15 /* LaunchScreen.storyboard */,
 				9621976A218243E2008CBA15 /* Info.plist */,
@@ -133,11 +141,34 @@
 			path = tipCalcUITests;
 			sourceTree = "<group>";
 		};
+		966E7F0B21C043A9004087EF /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				96F4DF792189645200671CB5 /* Theme.swift */,
+				966E7F0C21C04462004087EF /* ThemeProtocol.swift */,
+				966E7F0E21C04596004087EF /* LightTheme.swift */,
+				966E7F1021C045A2004087EF /* DarkTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		966E7F1521C0D252004087EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96219760218243E1008CBA15 /* ViewController.swift */,
+				96219762218243E1008CBA15 /* Main.storyboard */,
+				966E7F1221C0D151004087EF /* SettingsViewController.storyboard */,
+				9699896E2183A59800FAF4C3 /* SettingsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		96F4DF782189642E00671CB5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				966E7F0B21C043A9004087EF /* Theme */,
 				963326AE218E1EDB008258C6 /* Silom.ttf */,
-				96F4DF792189645200671CB5 /* Theme.swift */,
+				96A1D1D821ACDBB5008C12BA /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -246,9 +277,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A1D1D921ACDBB5008C12BA /* Colors.xcassets in Resources */,
 				96219769218243E2008CBA15 /* LaunchScreen.storyboard in Resources */,
 				963326AF218E1EDB008258C6 /* Silom.ttf in Resources */,
 				96219766218243E2008CBA15 /* Assets.xcassets in Resources */,
+				966E7F1421C0D151004087EF /* SettingsViewController.storyboard in Resources */,
 				96219764218243E1008CBA15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,9 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966E7F0D21C04462004087EF /* ThemeProtocol.swift in Sources */,
 				96219761218243E1008CBA15 /* ViewController.swift in Sources */,
 				96F4DF7A2189645200671CB5 /* Theme.swift in Sources */,
 				9621975F218243E1008CBA15 /* AppDelegate.swift in Sources */,
+				966E7F0F21C04596004087EF /* LightTheme.swift in Sources */,
+				966E7F1121C045A2004087EF /* DarkTheme.swift in Sources */,
 				9699896F2183A59800FAF4C3 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +363,14 @@
 				96219768218243E2008CBA15 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		966E7F1221C0D151004087EF /* SettingsViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				966E7F1321C0D151004087EF /* Base */,
+			);
+			name = SettingsViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

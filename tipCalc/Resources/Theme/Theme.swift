@@ -9,5 +9,5 @@
 import UIKit
 
 class Theme {
-    static let mainFontName = "Silom"
+    static var current: ThemeProtocol = LightTheme()
 }
