@@ -33,8 +33,11 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-- Learning how to save settings information via user defaults.
--
+### Challenges
+- Learning how to save information via UserDefaults.
+- Learning how to animate views.
+- Learning how to create theme protocols.
+
 
 ## License
 
