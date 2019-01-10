@@ -22,6 +22,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [X] Dark Mode
+- [X] Custom Font
 
 ## Video Walkthrough
 
