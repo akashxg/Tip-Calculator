@@ -35,10 +35,6 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
         //retrieving dark mode state
         let dMode = defaults.bool(forKey: "switchState")
@@ -58,6 +54,14 @@ class ViewController: UIViewController, UITextFieldDelegate{
         } else {
             tipControl.selectedSegmentIndex = 2
         }
+        
+        // calculate the tip
+        calculateTip()
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         billField.delegate = self
         
@@ -98,8 +102,6 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         view.backgroundColor = Theme.current.backgroundOne
         
-        
-        
     }
 
     // actions
@@ -131,9 +133,24 @@ class ViewController: UIViewController, UITextFieldDelegate{
         twoTotal.text = String(format: "$%.2f", total/2)
         threeTotal.text = String(format: "$%.2f", total/3)
         fourTotal.text = String(format: "$%.2f", total/4)
+        
     }
     
     // methods
+    func calculateTip() {
+        let tipPercentages = [0.18, 0.2, 0.25]
+        
+        let bill = Double(billField.text!) ?? 0
+        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
+        let total = bill + tip
+        
+        tipLabel.text = String(format: "$%.2f", tip)
+        totalLabel.text = String(format: "$%.2f", total)
+        twoTotal.text = String(format: "$%.2f", total/2)
+        threeTotal.text = String(format: "$%.2f", total/3)
+        fourTotal.text = String(format: "$%.2f", total/4)
+    }
+    
     func hideKeyboard() {
         billField.resignFirstResponder()
     }

@@ -51,9 +51,8 @@
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QJ4-OG-FcR">
-                                <rect key="frame" x="176" y="483" width="46" height="30"/>
+                                <rect key="frame" x="184" y="483" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="fEy-Wk-9h4" kind="unwind" unwindAction="unwindFromSettingsVC:" id="kVF-ia-edx"/>
                                 </connections>
