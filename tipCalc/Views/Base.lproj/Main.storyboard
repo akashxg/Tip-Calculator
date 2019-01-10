@@ -125,7 +125,7 @@
                     <navigationItem key="navigationItem" title="Tip Calculator" id="Wam-do-4gp">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="KTf-7A-btl">
                             <connections>
-                                <segue destination="Dhg-o0-DdT" kind="push" id="UaM-eN-dEy"/>
+                                <segue destination="Dhg-o0-DdT" kind="push" id="nPR-9k-tcW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

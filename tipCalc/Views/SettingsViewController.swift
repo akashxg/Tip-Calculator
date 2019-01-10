@@ -13,12 +13,18 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var defaultTipLabel: UILabel!
     @IBOutlet weak var tipDefault: UISegmentedControl!
     @IBOutlet weak var darkModeLabel: UILabel!
+    @IBOutlet weak var switchButton: UISwitch!
     
     let defaults = UserDefaults.standard
     let tipSettings = [0.18, 0.2, 0.25]
+    let mainScreen = ViewController()
+    var foo: Bool?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // checking for dark mode
+        switchButton.isOn = defaults.bool(forKey: "switchState")
         // set view font & size
         defaultTipLabel.font = UIFont(name: Theme.current.mainFontName, size: 20)
         darkModeLabel.font = UIFont(name: Theme.current.mainFontName, size: 20)
@@ -34,6 +40,8 @@ class SettingsViewController: UIViewController {
         }
         
         applyTheme()
+        
+        print(foo)
     }
     
     @IBAction func setDefaultTip(_ sender: Any) {
@@ -43,6 +51,7 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func themeChanged(_ sender: UISwitch) {
+        defaults.set(sender.isOn, forKey: "switchState")
         if sender.isOn {
             Theme.current = DarkTheme()
         } else {

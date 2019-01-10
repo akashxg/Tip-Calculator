@@ -50,6 +50,14 @@
                                     <action selector="themeChanged:" destination="Lks-Q4-yuB" eventType="valueChanged" id="JFG-QK-eT8"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QJ4-OG-FcR">
+                                <rect key="frame" x="176" y="483" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="fEy-Wk-9h4" kind="unwind" unwindAction="unwindFromSettingsVC:" id="kVF-ia-edx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -57,10 +65,12 @@
                     <connections>
                         <outlet property="darkModeLabel" destination="qZG-tG-gMO" id="os0-0n-x6q"/>
                         <outlet property="defaultTipLabel" destination="Dse-Q8-5JR" id="ba5-nD-Sot"/>
+                        <outlet property="switchButton" destination="Dn3-EZ-wla" id="o5x-UR-l7A"/>
                         <outlet property="tipDefault" destination="RMd-Of-jOQ" id="I5J-lF-znD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ji-n4-40b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fEy-Wk-9h4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1688.8" y="144.3778110944528"/>
         </scene>

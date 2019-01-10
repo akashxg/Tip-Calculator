@@ -28,6 +28,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     
     let defaults = UserDefaults.standard
+    var bar: Bool?
     // property to make sure that animation only occurs once
     var animationHasOccurred = false
     
@@ -39,8 +40,15 @@ class ViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //retrieving dark mode state
+        let dMode = defaults.bool(forKey: "switchState")
         // retrieving the default tip amount
         let dAmount = defaults.double(forKey:"tipAmount")
+        
+        //updating theme based on dark mode
+        if (dMode) {
+            print("Hello, World!")
+        }
         
         // updating the segmented control button with default tip amount
         if (dAmount == 0.18) {
@@ -97,6 +105,17 @@ class ViewController: UIViewController, UITextFieldDelegate{
     // actions
     @IBAction func onTap(_ sender: Any) {
         hideKeyboard()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? SettingsViewController else { return }
+        vc.foo = false
+    }
+    
+    @IBAction func unwindFromSettingsVC (_ sender: UIStoryboardSegue) {
+        guard let vc = sender.source as? SettingsViewController else { return }
+        bar = vc.foo
+        print(bar)
     }
     
     @IBAction func calculateTip(_ sender: Any) {
