@@ -91,7 +91,6 @@ class ViewController: UIViewController, UITextFieldDelegate{
         tipControl.tintColor = Theme.current.text
         billField.textColor = Theme.current.text
         
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
